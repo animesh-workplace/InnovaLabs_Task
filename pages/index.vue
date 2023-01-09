@@ -1,7 +1,8 @@
 <template>
     <div>
+        <!-- Parent to child communication using prop options -->
         <GeneralBtnGroup :options="navbar_options" @selected="SwitchOption" />
-
+        <!-- child to child communication using option_selected generated from component BtnGroup using SwitchOption -->
         <GeneralQuestion2 v-if="option_selected == 'Option_Question 2'" />
         <GeneralQuestion3 v-if="option_selected == 'Option_Question 3'" />
     </div>
