@@ -14,6 +14,9 @@ export default {
     mounted() {
         this.$nextTick(() => {})
     },
+    beforeMount() {
+        this.$store.dispatch('GetDataAll')
+    },
 }
 </script>
 
