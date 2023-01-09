@@ -1,6 +1,6 @@
 <template>
     <div class="flex justify-center">
-        <form @submit.prevent="validateForm" class="mt-8 max-w-md">
+        <form @submit.prevent="submitForm" class="mt-8 max-w-md">
             <div class="grid grid-cols-1 gap-6 mb-4">
                 <template v-for="block in blocks">
                     <template v-if="block.type === 'text'">
@@ -48,6 +48,13 @@
                     </template>
                 </template>
             </div>
+
+            <div class="block" v-if="errors">
+                <span v-for="(error, index) in errors" :key="index">
+                    {{ index }} : {{ error }}
+                </span>
+            </div>
+
             <button
                 type="submit"
                 class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-800"
@@ -94,28 +101,29 @@ export default {
         ],
     }),
     methods: {
-        validateForm() {
-            // reset any previous errors
-            this.errors = {}
+        // validateForm() {
+        //     // reset any previous errors
+        //     this.errors = {}
 
-            // validate each field
-            for (const block of this.blocks) {
-                if (block.props.required && !this.formData[block.token]) {
-                    this.$set(
-                        this.errors,
-                        block.token,
-                        'This field is required'
-                    )
-                }
-            }
+        //     // validate each field
+        //     for (const block of this.blocks) {
+        //         if (block.props.required && !this.formData[block.token]) {
+        //             this.$set(
+        //                 this.errors,
+        //                 block.token,
+        //                 'This field is required'
+        //             )
+        //         }
+        //     }
 
-            if (Object.keys(this.errors).length > 0) {
-                return false
-            }
+        //     if (Object.keys(this.errors).length > 0) {
+        //         return false
+        //     }
 
-            this.submitForm()
-        },
+        //     this.submitForm()
+        // },
         submitForm() {
+            alert('Form has passed check and will be submitted')
             console.log(this.formData)
         },
     },
