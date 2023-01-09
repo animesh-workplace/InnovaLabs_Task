@@ -15,11 +15,11 @@ export default {
         ],
         link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     },
-    css: [],
     build: {},
     components: true,
     axios: { baseURL: '/' },
     modules: ['@nuxtjs/axios'],
+    css: ['vuesax/dist/vuesax.css'],
     buildModules: ['@nuxtjs/tailwindcss'],
     plugins: [{ src: '@/plugins/plugin-datagrid', mode: 'client' }],
 }
