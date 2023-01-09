@@ -1427,6 +1427,41 @@
   resolved "https://registry.yarnpkg.com/@polka/url/-/url-1.0.0-next.21.tgz#5de5a2385a35309427f6011992b544514d559aa1"
   integrity sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==
 
+"@revolist/revogrid@^3.2.16", "@revolist/revogrid@^3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@revolist/revogrid/-/revogrid-3.3.0.tgz#ab931a4b1e9bce856b9b5dc71e9b910262a83408"
+  integrity sha512-fmLRNh53mo7R+kfchpnqg+dlPVvSjotodTUYn6pnI45M9vr5Bs3iiov6LyVCTy4WIYEgYG9ikCSkcZuLtojTog==
+  dependencies:
+    lodash "^4.17.20"
+
+"@revolist/revogrid@^4.2.0-next.14":
+  version "4.2.0-next.14"
+  resolved "https://registry.yarnpkg.com/@revolist/revogrid/-/revogrid-4.2.0-next.14.tgz#88d7527644c3c78f9d96d718b4188656423bd538"
+  integrity sha512-CPQQ25uygFQOeI2Fw5ZQgw7m66sElWuMWir7lkUzq1jB060lrQkZhBBAJoIrCPq3jhLQ3I6wb+2xiyUhbasFHA==
+  dependencies:
+    lodash "^4.17.20"
+
+"@revolist/vue-datagrid@^3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@revolist/vue-datagrid/-/vue-datagrid-3.3.0.tgz#78f850cace3818dc095fd18a44c390a270d3a7b5"
+  integrity sha512-Oo2Cu5HBIF/306w7TQrCayFlsoyVW4/BwlcApm81EQLbYCCpvxI/oFzgokGykbXKR6uu1UdVBvbSpW26gCHb5Q==
+  dependencies:
+    "@revolist/revogrid" "^3.3.0"
+    "@stencil/core" "^2.17.3"
+
+"@revolist/vue3-datagrid@^3.2.17":
+  version "3.2.17"
+  resolved "https://registry.yarnpkg.com/@revolist/vue3-datagrid/-/vue3-datagrid-3.2.17.tgz#7d2b12ca6131c27990dc1999283bbf78de9bfa74"
+  integrity sha512-hl2E/W2X1AGP41ZPNcKdMmx6X7D6VuhogsVorYNCtUhEsYed1ZTLBS3+XohZTPOGCLE5F3J8HQHOcT+234nQBA==
+  dependencies:
+    "@revolist/revogrid" "^3.2.16"
+    "@stencil/core" "^2.17.3"
+
+"@stencil/core@^2.17.3":
+  version "2.21.0"
+  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-2.21.0.tgz#d156e2e1ef41d6b5506880bf0cf80cf827bd1335"
+  integrity sha512-c4mVCl87wTV8u7ExQqiiQU5XrkzXjq8ll8skPlFHlJ7+5hGWhRpuVqKgVYJPN1mC/ucRqCUfjzSNUD7cFKHhkw==
+
 "@types/html-minifier-terser@^5.0.0":
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/@types/html-minifier-terser/-/html-minifier-terser-5.1.2.tgz#693b316ad323ea97eed6b38ed1a3cc02b1672b57"
