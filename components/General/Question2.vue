@@ -1,11 +1,13 @@
 <template>
-    <v-grid
-        filter
-        exporting
-        class="add-height"
-        :columns="columns"
-        :source="data_summary"
-    />
+    <div class="flex justify-center">
+        <v-grid
+            filter
+            exporting
+            :columns="columns"
+            :source="data_summary"
+            class="add-height mt-8 max-w-xl"
+        />
+    </div>
 </template>
 
 <script>

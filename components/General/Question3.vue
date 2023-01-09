@@ -1,6 +1,6 @@
 <template>
     <div class="flex justify-center">
-        <form @submit.prevent="submitForm" class="mt-8 max-w-md">
+        <form @submit.prevent="submitForm" class="mt-8 max-w-xl">
             <div class="grid grid-cols-1 gap-6 mb-4">
                 <template v-for="block in blocks">
                     <template v-if="block.type === 'text'">
