@@ -2,8 +2,8 @@
     <div>
         <GeneralBtnGroup :options="navbar_options" @selected="SwitchOption" />
 
-        <Question2 v-if="option_selected == 'Option_Question2'" />
-        <Question3 v-if="option_selected == 'Option_Question3'" />
+        <GeneralQuestion2 v-if="option_selected == 'Option_Question 2'" />
+        <GeneralQuestion3 v-if="option_selected == 'Option_Question 3'" />
     </div>
 </template>
 
