@@ -1,6 +1,7 @@
 import { getField, updateField } from 'vuex-map-fields'
 
 export const state = () => ({
+    pages: 0,
     data_summary: [],
 })
 
@@ -12,6 +13,7 @@ export const mutations = {
     updateField,
     SET_DATA_SUMMARY(state, payload) {
         state.data_summary = payload
+        state.pages = payload.length
     },
 }
 
