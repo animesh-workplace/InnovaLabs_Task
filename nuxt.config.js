@@ -17,9 +17,9 @@ export default {
     },
     css: [],
     build: {},
-    plugins: [],
     components: true,
     axios: { baseURL: '/' },
     modules: ['@nuxtjs/axios'],
     buildModules: ['@nuxtjs/tailwindcss'],
+    plugins: [{ src: '@/plugins/plugin-datagrid', mode: 'client' }],
 }
