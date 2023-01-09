@@ -24,6 +24,7 @@ export default {
     },
     methods: {
         EmitClick(option) {
+            // Child to parent communication
             if (option == this.selected) {
                 this.selected = false
                 this.$emit('selected', null)
