@@ -1,9 +1,10 @@
 <template>
     <v-grid
         filter
-        :source="data_summary"
-        :columns="columns"
+        exporting
         class="add-height"
+        :columns="columns"
+        :source="data_summary"
     />
 </template>
 
